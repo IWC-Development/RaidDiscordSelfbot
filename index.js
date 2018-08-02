@@ -3,11 +3,11 @@ const client = new Discord.Client();
 const bot = new Discord.Client()
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Bot carregado ${client.user.tag}!`);
 });
 
 bot.on('ready', () => {
-  console.log(`Logged in as ${bot.user.tag}!`);
+  console.log(`Bot carregado ${bot.user.tag}!`);
 });
 
 client.on('message', msg => {
