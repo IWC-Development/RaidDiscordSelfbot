@@ -1,3 +1,64 @@
 Para você criar mais de 2 bots,
-você precisa definir os .on e vars
+você precisa definir os .on e const
 
+"
+const bot = new Discord.Client()
+bot.on('ready', () => {
+  console.log(`Bot carregado ${bot.user.tag}!`);
+});
+bot.login(process.env.TOKEN2);
+"
+
+E Você precisa definir as coisas no .env
+vamos supor que eu quero 5 bots funcionando no mesmo cmd
+você vai lá, faz oque precisa ser feito, e o token...
+
+.ENV :
+
+"
+Token1=
+Token2=
+Token3=
+Token4=
+Token5=
+"
+
+Index.js :
+
+"
+const bot1 = new Discord.Client()
+const bot2 = new Discord.Client()
+const bot3 = new Discord.Client()
+const bot4 = new Discord.Client()
+const bot5 = new Discord.Client()
+
+bot1.on('ready', () => {
+  console.log(`Bot carregado ${bot1.user.tag}!`);
+});
+
+bot2.on('ready', () => {
+  console.log(`Bot carregado ${bot2.user.tag}!`);
+});
+
+bot3.on('ready', () => {
+  console.log(`Bot carregado ${bot3.user.tag}!`);
+});
+
+bot4.on('ready', () => {
+  console.log(`Bot carregado ${bot4.user.tag}!`);
+});
+
+bot5.on('ready', () => {
+  console.log(`Bot carregado ${bot5.user.tag}!`);
+});
+
+bot1.login(process.env.TOKEN1);
+bot2.login(process.env.TOKEN2);
+bot3.login(process.env.TOKEN3);
+bot4.login(process.env.TOKEN4);
+bot5.login(process.env.TOKEN5);
+
+"
+
+Sim, é hard de codar se você querer conectar e fazer mais comandos...
+você também pode fazer uma gambiarra.
