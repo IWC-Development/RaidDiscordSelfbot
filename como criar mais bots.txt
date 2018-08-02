@@ -1,0 +1,3 @@
+Para você criar mais de 2 bots,
+você precisa definir os .on e vars
+
