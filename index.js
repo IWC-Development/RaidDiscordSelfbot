@@ -11,18 +11,14 @@ bot.on('ready', () => {
 });
 
 client.on('message', msg => {
-var codigo = msg.content.split(" ")
-  if (msg.content === '!entrar') {
- client.acceptInvite(codigo[1])
-    msg.reply('Entrei neste servidor!');
+  if (msg.content === '!on') {
+    msg.reply('estou vivo');
   }
 });
 
 bot.on('message', msg => {
-var codigo = msg.content.split("")
-  if (msg.content === '!entrar') {
- bot.acceptInvite(codigo[1])
-    msg.reply('Entrei neste servidor!');
+  if (msg.content === '!on') {
+    msg.reply('estou vivo');
   }
 });
 
